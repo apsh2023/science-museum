@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribute - Community Science Museum</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+  
+   
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #f8f8f8;
+    padding: 1em;
+    text-align: center;
+    
+}
+
+nav ul {
+    list-style-type: none;
+   
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    padding: 0;
+    background-color: black
+   
+}
+
+nav ul li {
+  display: inline;
+    margin-right: 10px;
+  
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    float: left;
+   
+}
+
+
+
+
+h2, h3 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+footer {
+    margin-top: 20px;
+}
+.screen{
+
+background-color: rgb(172, 225, 242);
+}
+
+    </style>
+</head>
+<body>
+  <div class="screen">
+    <header>
+        <h1>Community Science Museum</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contribution.html">Contribute</a></li>
+                <li><a href="exhibitions.html">Exhibitions</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Support the Community Science Museum</h2>
+            <p>Help us inspire and educate the next generation of scientists and explorers! There are many ways you can contribute to the Community Science Museum:</p>
+            
+            <h3>1. Make a Donation</h3>
+            <p>Your financial support helps us maintain our exhibits, develop new programs, and ensure accessibility for all visitors. Every contribution makes a difference!</p>
+            <form action="submit-donation" method="POST">
+                <label for="donation-amount">Donation Amount:</label>
+                <input type="number" id="donation-amount" name="donation-amount" required>
+                <button type="submit">Donate</button>
+            </form>
+            
+            <h3>2. Volunteer Your Time</h3>
+            <p>Volunteers play a crucial role in our mission. Whether you can help with events, tours, or behind-the-scenes work, we welcome your time and talents.</p>
+            <form action="submit-volunteer" method="POST">
+                <label for="volunteer-name">Name:</label>
+                <input type="text" id="volunteer-name" name="volunteer-name" required>
+                
+                <label for="volunteer-email">Email:</label>
+                <input type="email" id="volunteer-email" name="volunteer-email" required>
+                
+                <label for="volunteer-message">Message:</label>
+                <textarea id="volunteer-message" name="volunteer-message" required></textarea>
+                
+                <button type="submit">Volunteer</button>
+            </form>
+            
+            <h3>3. Donate Materials or Exhibits</h3>
+            <p>If you have scientific materials, artifacts, or other items that could enhance our exhibits, we would love to hear from you!</p>
+            <form action="submit-materials" method="POST">
+                <label for="materials-name">Name:</label>
+                <input type="text" id="materials-name" name="materials-name" required>
+                
+                <label for="materials-email">Email:</label>
+                <input type="email" id="materials-email" name="materials-email" required>
+                
+                <label for="materials-description">Description:</label>
+                <textarea id="materials-description" name="materials-description" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            
+            <p>For more information on how you can support the museum, please contact us at <a href="mailto:info@communitysciencemuseum.org">info@communitysciencemuseum.org</a> or call (123) 456-7890.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Community Science Museum</p>
+    </footer>
+   </div>
+  </body>
+</html>
